@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>
+		datepicker</title>
+		<link rel="stylesheet" href="material.min.css">
+			<script src="jquery.js"></script>
+			<script src="material.min.js"></script>
+			<script src="moment-with-locales.min.js"></script>
+			<link rel="stylesheet" href="bootstrap-material-datetimepicker.css">
+			<script src="bootstrap-material-datetimepicker.js"></script>
+			<link rel="stylesheet" type="text/css" href="jquery.datetimepicker.min.css">
+			<script type="text/javascript"  src="jquery.datetimepicker.min.js"></script>
+			 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script type="text/javascript">
+$(document).ready(function () {
+//$('#date-format').bootstrapMaterialDatePicker({ format : 'dddd DD MMMM YYYY - HH:mm' });
+//$('#date').bootstrapMaterialDatePicker({ time: false });
+$('#date-format').bootstrapMaterialDatePicker({
+
+  // enable date picker
+  date : true, 
+
+  // enable time picker
+  time : false, 
+
+  // custom date format
+  format : 'dddd DD MMMM YYYY - HH:mm', 
+
+  // min / max date
+  minDate : null, 
+  maxDate : null, 
+
+  // current date
+  currentDate : null, 
+
+  // Localization
+  lang : 'en', 
+
+  // week starts at
+  weekStart : 0, 
+
+  // short time format
+  shortTime : false, 
+
+  // text for cancel button
+  'cancelText' : 'Cancel', 
+
+  // text for ok button
+  'okText' : 'OK' 
+
+});
+
+
+});
+</script>
+
+</head>
+<body>
+	<input type="text" id="date-format">
+
+</body>
+</html>
